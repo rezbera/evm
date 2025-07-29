@@ -6,7 +6,17 @@ use core::{
     fmt::Debug,
     ops::{Deref, DerefMut},
 };
-use revm::{context::{BlockEnv, CfgEnv, Evm as RevmEvm, TxEnv}, context_interface::result::{EVMError, HaltReason, ResultAndState}, handler::{instructions::EthInstructions, EthFrame, EthPrecompiles, PrecompileProvider}, inspector::NoOpInspector, interpreter::{interpreter::EthInterpreter, InterpreterResult}, precompile::{PrecompileSpecId, Precompiles}, primitives::hardfork::SpecId, Context, ExecuteEvm, InspectEvm, InspectSystemCallEvm, Inspector, MainBuilder, MainContext, SystemCallEvm};
+use revm::{
+    context::{BlockEnv, CfgEnv, Evm as RevmEvm, TxEnv},
+    context_interface::result::{EVMError, HaltReason, ResultAndState},
+    handler::{instructions::EthInstructions, EthFrame, EthPrecompiles, PrecompileProvider},
+    inspector::NoOpInspector,
+    interpreter::{interpreter::EthInterpreter, InterpreterResult},
+    precompile::{PrecompileSpecId, Precompiles},
+    primitives::hardfork::SpecId,
+    Context, ExecuteEvm, InspectEvm, InspectSystemCallEvm, Inspector, MainBuilder, MainContext,
+    SystemCallEvm,
+};
 
 mod block;
 pub use block::*;
