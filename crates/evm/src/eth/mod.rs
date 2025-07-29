@@ -136,7 +136,7 @@ where
         if self.inspect {
             self.inner.inspect_system_call_with_caller(caller, contract, data)
         } else {
-            self.inner.transact_system_call_with_caller_finalize(caller, contract, data)
+            self.inner.system_call_with_caller(caller, contract, data)
         }
     }
 
