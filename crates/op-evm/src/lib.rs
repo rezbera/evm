@@ -210,4 +210,3 @@ impl EvmFactory for OpEvmFactory {
         }
     }
 }
-
