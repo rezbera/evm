@@ -5,45 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.16.2](https://github.com/alloy-rs/evm/releases/tag/v0.16.2) - 2025-07-30
-
-### Features
-
-- More impls for `Either` ([#147](https://github.com/alloy-rs/evm/issues/147))
-
-## [0.16.1](https://github.com/alloy-rs/evm/releases/tag/v0.16.1) - 2025-07-28
+## [0.17.0](https://github.com/alloy-rs/evm/releases/tag/v0.17.0) - 2025-08-05
 
 ### Bug Fixes
 
 - Handle precompile reverts in `PrecompilesMap` ([#144](https://github.com/alloy-rs/evm/issues/144))
 
-### Miscellaneous Tasks
-
-- Release 0.16.1
-
-## [0.16.0](https://github.com/alloy-rs/evm/releases/tag/v0.16.0) - 2025-07-27
-
 ### Dependencies
 
 - Bump msrv ([#142](https://github.com/alloy-rs/evm/issues/142))
 - Bump revm2710 ([#141](https://github.com/alloy-rs/evm/issues/141))
-
-### Features
-
-- Add as_invalid_tx_err in InvalidTxError ([#143](https://github.com/alloy-rs/evm/issues/143))
-
-### Miscellaneous Tasks
-
-- Release 0.16.0
-
-## [0.15.0](https://github.com/alloy-rs/evm/releases/tag/v0.15.0) - 2025-07-21
-
-### Dependencies
-
 - Bump revm 2703 ([#133](https://github.com/alloy-rs/evm/issues/133))
 
 ### Features
 
+- `ToTxEnv` ([#148](https://github.com/alloy-rs/evm/issues/148))
+- More impls for `Either` ([#147](https://github.com/alloy-rs/evm/issues/147))
+- Add as_invalid_tx_err in InvalidTxError ([#143](https://github.com/alloy-rs/evm/issues/143))
 - Add Any bound and as_any method to InvalidTxError trait ([#128](https://github.com/alloy-rs/evm/issues/128))
 - Enhance precompile lookup documentation and functionality ([#137](https://github.com/alloy-rs/evm/issues/137))
 - `EvmInternals::log` ([#135](https://github.com/alloy-rs/evm/issues/135))
@@ -52,6 +30,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Miscellaneous Tasks
 
+- Add into_dyn_precompiles ([#150](https://github.com/alloy-rs/evm/issues/150))
+- Release 0.16.2
+- Release 0.16.1
+- Release 0.16.0
 - Release 0.15.0
 - Convert PrecompilesMap into struct ([#136](https://github.com/alloy-rs/evm/issues/136))
 - Use revm system_call ([#121](https://github.com/alloy-rs/evm/issues/121))
@@ -105,10 +87,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.12.2](https://github.com/alloy-rs/evm/releases/tag/v0.12.2) - 2025-06-23
 
-### Bug Fixes
-
-- Fix compilation
-
 ### Documentation
 
 - Fix typo in tracing.rs comment ([#113](https://github.com/alloy-rs/evm/issues/113))
@@ -122,6 +100,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Release 0.12.2
 - Derive Copy for `PrecompileInput` ([#110](https://github.com/alloy-rs/evm/issues/110))
+
+## [0.12.1](https://github.com/alloy-rs/evm/releases/tag/v0.12.1) - 2025-06-20
+
+### Bug Fixes
+
+- Fix compilation
+
+### Miscellaneous Tasks
+
 - Release 0.12.1
 
 ## [0.12.0](https://github.com/alloy-rs/evm/releases/tag/v0.12.0) - 2025-06-20
