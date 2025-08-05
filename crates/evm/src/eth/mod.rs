@@ -137,17 +137,22 @@ where
         }
     }
 
+    fn inspect_system_call(
+        &mut self,
+        caller: Address,
+        contract: Address,
+        data: Bytes,
+    ) -> Result<ResultAndState<Self::HaltReason>, Self::Error> {
+        self.inner.inspect_system_call_with_caller(caller, contract, data)
+    }
+
     fn transact_system_call(
         &mut self,
         caller: Address,
         contract: Address,
         data: Bytes,
     ) -> Result<ResultAndState<Self::HaltReason>, Self::Error> {
-        if self.inspect {
-            self.inner.inspect_system_call_with_caller(caller, contract, data)
-        } else {
-            self.inner.system_call_with_caller(caller, contract, data)
-        }
+        self.inner.system_call_with_caller(caller, contract, data)
     }
 
     fn finish(self) -> (Self::DB, EvmEnv<Self::Spec>) {
